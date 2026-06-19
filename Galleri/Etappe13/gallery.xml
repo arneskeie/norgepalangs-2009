@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simpleviewerGallery maxImageWidth="900" maxImageHeight="900" textColor="0xcccccc" frameColor="0xffffff" frameWidth="5" stagePadding="40" thumbnailColumns="3" thumbnailRows="5" navPosition="left" title="&lt;font&gt; &lt;a href=&quot;../../index.php?side=Galleri&quot;&gt;TILBAKE TIL GALLERI&lt;/a&gt; &lt;/font&gt; &lt;font size=&quot;20&quot;&gt;
+<simpleviewerGallery maxImageWidth="900" maxImageHeight="900" textColor="0xcccccc" frameColor="0xffffff" frameWidth="5" stagePadding="40" thumbnailColumns="3" thumbnailRows="5" navPosition="left" title="&lt;font&gt; &lt;a href=&quot;../../galleri.html&quot;&gt;TILBAKE TIL GALLERI&lt;/a&gt; &lt;/font&gt; &lt;font size=&quot;20&quot;&gt;
 Etappe 13:&lt;br&gt;Ustaoset - Haukeliseter&lt;/font&gt;" enableRightClickOpen="false" backgroundImagePath="" imagePath="" thumbPath="">
 
 <image>
