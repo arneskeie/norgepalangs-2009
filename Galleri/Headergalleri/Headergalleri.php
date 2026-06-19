@@ -1,14 +1,9 @@
-	<?php
-		$sider = array("Hjem", "OmOss", "Reiserute", "Utstyr", "Turlogg", "Reisebrev", "Galleri", "Gjestebok", "Sponsorer");
-		foreach($sider as $mv){
-			if($mv == $side){
-				$stil = "../../images/menylinje/" . $mv . "Rollover.jpg";
-			}else{
-				$stil = "../../images/menylinje/" . $mv . ".jpg";
-			}
-			?><a href="../../index.php?side=<?php echo $mv ?>" onmouseout="MM_swapImgRestore()"
-			onmouseover="MM_swapImage('<?php echo $mv ?>','','../../images/menylinje/<?php echo $mv ?>Rollover.jpg',1)">
-			<img src="<?php echo $stil ?>" alt="<?php echo $mv ?>" name="<?php echo $mv ?>" border="0"></a>
-			<?php
-		}
-	?>
+<a href="../../index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Hjem','','../../images/menylinje/HjemRollover.jpg',1)"><img src="../../images/menylinje/Hjem.jpg" alt="Hjem" name="Hjem" border="0"></a>
+<a href="../../omoss.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('OmOss','','../../images/menylinje/OmOssRollover.jpg',1)"><img src="../../images/menylinje/OmOss.jpg" alt="OmOss" name="OmOss" border="0"></a>
+<a href="../../reiserute.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Reiserute','','../../images/menylinje/ReiseruteRollover.jpg',1)"><img src="../../images/menylinje/Reiserute.jpg" alt="Reiserute" name="Reiserute" border="0"></a>
+<a href="../../utstyr.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Utstyr','','../../images/menylinje/UtstyrRollover.jpg',1)"><img src="../../images/menylinje/Utstyr.jpg" alt="Utstyr" name="Utstyr" border="0"></a>
+<a href="../../turlogg.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Turlogg','','../../images/menylinje/TurloggRollover.jpg',1)"><img src="../../images/menylinje/Turlogg.jpg" alt="Turlogg" name="Turlogg" border="0"></a>
+<a href="../../reisebrev.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Reisebrev','','../../images/menylinje/ReisebrevRollover.jpg',1)"><img src="../../images/menylinje/Reisebrev.jpg" alt="Reisebrev" name="Reisebrev" border="0"></a>
+<a href="../../galleri.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Galleri','','../../images/menylinje/GalleriRollover.jpg',1)"><img src="../../images/menylinje/Galleri.jpg" alt="Galleri" name="Galleri" border="0"></a>
+<a href="../../gjestebok.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Gjestebok','','../../images/menylinje/GjestebokRollover.jpg',1)"><img src="../../images/menylinje/Gjestebok.jpg" alt="Gjestebok" name="Gjestebok" border="0"></a>
+<a href="../../sponsorer.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Sponsorer','','../../images/menylinje/SponsorerRollover.jpg',1)"><img src="../../images/menylinje/Sponsorer.jpg" alt="Sponsorer" name="Sponsorer" border="0"></a>
