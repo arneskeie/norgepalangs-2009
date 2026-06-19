@@ -28,12 +28,13 @@ function MM_swapImage(){var i,j=0,x,a=MM_swapImage.arguments;document.MM_sr=new 
 </script>"""
 
 HEADER_HTML = """\
-<div id="header">
+<div id="header" style="position:relative;">
   <object type="application/x-shockwave-flash" data="Headermovie/Header.swf" width="900" height="121">
     <param name="movie" value="Headermovie/Header.swf"/>
     <param name="quality" value="high"/>
     <param name="bgcolor" value="#222222"/>
   </object>
+  <a href="INDEXHREF" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:10;" aria-label="Hjem"></a>
 </div>"""
 
 FOOTER_HTML = """\
@@ -105,7 +106,7 @@ def page(title, active, body, css_prefix="", nav_prefix=""):
 {JS_FUNCS}
 </head>
 <body>
-{HEADER_HTML.replace('images/', css_prefix + 'images/').replace('Headermovie/', css_prefix + 'Headermovie/')}
+{HEADER_HTML.replace('images/', css_prefix + 'images/').replace('Headermovie/', css_prefix + 'Headermovie/').replace('INDEXHREF', css_prefix + 'index.html')}
 <br/><br/>
 <div id="headermeny">
   {nav_html(active, nav_prefix)}
@@ -734,7 +735,7 @@ def build_gallery_page(gal_name):
             f'<img src="{img_src}" alt="{item}" name="{item}" border="0"/></a>'
         )
 
-    header_replaced = HEADER_HTML.replace('images/', prefix + 'images/').replace('Headermovie/', prefix + 'Headermovie/')
+    header_replaced = HEADER_HTML.replace('images/', prefix + 'images/').replace('Headermovie/', prefix + 'Headermovie/').replace('INDEXHREF', prefix + 'index.html')
     footer_replaced = FOOTER_HTML.replace('images/', prefix + 'images/')
 
     return f"""<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
