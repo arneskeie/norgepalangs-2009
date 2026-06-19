@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simpleviewerGallery maxImageWidth="900" maxImageHeight="900" textColor="0xcccccc" frameColor="0xffffff" frameWidth="5" stagePadding="40" thumbnailColumns="3" thumbnailRows="5" navPosition="left" title="&lt;font&gt; &lt;a href=&quot;../../index.php?side=Galleri&quot;&gt;TILBAKE TIL GALLERI&lt;/a&gt; &lt;/font&gt; &lt;font size=&quot;20&quot;&gt;
+Etappe 14:&lt;br&gt;Haukeliseter - Ljosland&lt;/font&gt;" enableRightClickOpen="false" backgroundImagePath="" imagePath="" thumbPath="">
+
+<image>
+	<filename>1.jpg</filename>
+</image>
+<image>
+	<filename>2.jpg</filename>
+</image>
+<image>
+	<filename>3.jpg</filename>
+</image>
+<image>
+	<filename>4.jpg</filename>
+</image>
+<image>
+	<filename>5.jpg</filename>
+</image>
+<image>
+	<filename>6.jpg</filename>
+</image>
+<image>
+	<filename>7.jpg</filename>
+</image>
+<image>
+	<filename>8.jpg</filename>
+</image>
+<image>
+	<filename>9.jpg</filename>
+</image>
+<image>
+	<filename>10.jpg</filename>
+</image>
+<image>
+	<filename>11.jpg</filename>
+</image>
+<image>
+	<filename>12.jpg</filename>
+</image>
+<image>
+	<filename>13.jpg</filename>
+</image>
+<image>
+	<filename>14.jpg</filename>
+</image>
+<image>
+	<filename>15.jpg</filename>
+</image>
+<image>
+	<filename>16.jpg</filename>
+</image>
+<image>
+	<filename>17.jpg</filename>
+</image>
+<image>
+	<filename>18.jpg</filename>
+</image>
+<image>
+	<filename>19.jpg</filename>
+</image>
+<image>
+	<filename>20.jpg</filename>
+</image>
+<image>
+	<filename>21.jpg</filename>
+</image>
+<image>
+	<filename>22.jpg</filename>
+</image>
+<image>
+	<filename>23.jpg</filename>
+</image>
+<image>
+	<filename>24.jpg</filename>
+</image>
+<image>
+	<filename>25.jpg</filename>
+</image>
+</simpleviewerGallery>

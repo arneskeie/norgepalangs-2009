@@ -1,0 +1,490 @@
+@charset "UTF-8";
+
+body {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #212121;
+	}
+
+#mainimage {
+	background: transparent url(images/diverse/bakgrunnrepeat.png) repeat-y top center;
+	text-align: center;
+	}
+
+#header {
+	margin: auto;
+	width: 900px;
+	}
+
+#headermeny {
+	background: transparent url(images/menylinje/Menylinjebakgrunn.png) no-repeat bottom center;
+	margin: auto;
+	padding-top:30px;
+	padding-bottom:15px;
+	}
+
+#header2 {
+	padding-top: 17px;
+	padding-bottom: 10px;
+	background: transparent url(images/menylinje/Menylinjebakgrunngalleri.png) no-repeat top center;
+	margin: auto;
+	width: 950px;
+	}
+
+#main {
+  	margin: auto;
+  	width: 900px;
+ 	text-align: left;
+ 	padding-left:30px;
+ 	position: relative;
+  	}
+
+#sponsormain {
+  	width: 900px;
+  	}
+
+.Sponsortoppen {
+	margin-right: -14px;
+	margin-bottom: -3px;
+  	}
+
+#Sponsorbody {
+	margin-right: -14px;
+	background: transparent url(images/diverse/sponsorbakgrunn.png) repeat-y top right;
+	padding-right: 14px;
+  	}
+
+#Sponsorliste {
+	float: right;
+	margin-right: -50px;
+  	width: 120px;
+	text-align: right;
+	padding-right: 14px;
+	padding-left: 15px;
+  	}
+
+#Sistenyttindeks {
+	float: left;
+	margin-left: -70px;
+  	width: 170px;
+	text-align: left;
+	padding-top: 5px;
+	padding-right: 60px;
+	padding-left: 18px;
+  	}
+
+.skillebilde {
+	margin-left: -18px;
+	margin-bottom: -3px;
+	}
+
+.bakgrunnsideramme {
+	padding-right: 20px;
+	padding-left: 18px;
+	background: transparent url(images/diverse/rammebakgrunn.png) repeat-y top left;
+	margin-left: -18px;
+	margin-right: -25px;
+	}
+
+.gallerithumb {
+	float: left;
+	margin-right: 5px;
+	margin-top: 5px;
+	}
+
+#OmOssWrap {
+	float: left;
+	width: 120px;
+	height: 350px;
+	overflow: auto;
+	margin-right: 20px;
+	border: thin solid #333333;
+	background-color: #000000;
+	padding: 6px;
+	}
+
+#OmOssbolk {
+	width: 74px;
+	border: thin solid #333333;
+	background-color: #222222;
+	padding: 6px;
+	text-align: center;
+	}
+
+#Reiserutediv {
+	float: right;
+	margin-right: -55px;
+	margin-bottom: -75px;
+	width: 430px;
+	padding: 10px;
+	display: block;
+  	}
+
+#spotkart {
+	width: 430px;
+	text-align: center;
+  	}
+
+#Reiserutetekst {
+	float: left;
+	width: 350px;
+	padding: 10px;
+	display: block;
+  	}
+
+#Reiserutenotabene {
+	padding: 20px;
+	}
+
+#Turloggvenstre {
+	float: left;
+  	width: 350px;
+	text-align: left;
+	padding-top: 20px;
+  	}
+
+#Turlogghøyre {
+	float: right;
+  	width: 350px;
+	text-align: left;
+	padding-top: 20px;
+	margin-right: 70px;
+  	}
+
+#Gjesteboka {
+	float: left;
+  	width: 700px;
+	padding-right: 10px;
+	padding-left: 20px;
+  	}
+
+#utstyrbolk {
+	width: 800px;
+	text-align: left;
+	padding: 0px;
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	}
+
+#utstyrbolk a.utstyr {
+	color: #999999;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	}
+
+#utstyrbolk a.utstyr:hover {
+	color: #cccccc;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	}
+
+#utstyrbolk a.utstyr span {
+	display: none;
+	}
+
+#utstyrbolk a.utstyr:hover span {
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 200px;
+	}
+
+#utstyrbolkhøgre {
+	width: 200px;
+	text-align: right;
+	padding: 0px;
+	display: block;
+	float: right;
+	}
+
+#utstyrbolkvenstre {
+	width: 200px;
+	text-align: left;
+	padding: 0px;
+	display: block;
+	float: left;
+	}
+
+#reisebrev {
+	width: 760px;
+	text-align: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	}
+
+#reisebrevinnhald {
+	width: 860px;
+	text-align: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	}
+
+#footerturlogg {
+	margin: auto;
+	width: 860px;
+	text-align: left;
+	padding-top: 10px;
+	}
+
+#footer {
+	background: transparent url(images/diverse/footerbakgrunn.png) no-repeat top center;
+	text-align:center;
+	padding-top: 20px;
+	display: block;
+	clear: both;
+	}
+
+#clearfooter {
+	clear: both;
+	}
+
+#videogalleri {
+  	margin: auto;
+  	width: 900px;
+  	text-align: center;
+  	padding-left: 100px;
+  	}
+
+#fototable {
+	position: relative;
+	}
+
+#norgekart {
+	position: absolute;
+	left: 20px;
+	}
+
+#oppvarming {
+	position: absolute;
+	left: 0px;
+	}
+
+#fotowrap {
+	float: right;
+	margin-right: 70px;
+	margin-bottom: 290px;
+	}
+
+#fotowrap a span {
+	display: none;
+	}
+
+#fotowrap a:hover span {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	}
+
+#videotable {
+	}
+
+#videotablewrap {
+	height: 345px;
+	width: 290px;
+	overflow: auto;
+	position: absolute;
+	}
+
+#videotablebolk {
+	border: thin solid #333333;
+	background-color: #222222;
+	padding: 6px;
+	}
+
+a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+
+a:visited {
+	text-decoration: none;
+	color: #FFFFFF;
+	}
+
+a:hover {
+	text-decoration: none;
+	color: #ffb20a;
+	}
+
+a:active {
+	text-decoration: none;
+	color: #FFFFFF;
+	}
+
+.overskriftlysgrå {
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #CCCCCC;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+	}
+
+.overskrifthvit {
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+	}
+
+.ingresstekst {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #CCCCCC;
+	font-weight: normal;
+	font-style: normal;
+	}
+
+.ingresstekstboldmellomgrå {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #888888;
+	font-weight: bold;
+	font-style: normal;
+	}
+
+.ingresstekstboldmørkgrå {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	font-weight: bold;
+	font-style: normal;
+	}
+
+.ingresstekstbold {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #CCCCCC;
+	font-weight: bold;
+	font-style: normal;
+	}
+
+.turloggoverskriftoransj {
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffb20a;
+	font-weight: normal;
+	font-style: normal;
+	}
+
+.vanligtekst {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #CCCCCC;
+	font-weight: normal;
+	text-align: left;
+	}
+
+.vanligtekstmellomgrå {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #999999;
+	font-weight: normal;
+	}
+
+.vanligtekstmørkegrå {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	font-weight: normal;
+	}
+
+.vanligtekstsvart {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: normal;
+	}
+
+.feittekstmørkegrå {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	font-weight: bold;
+	}
+
+.footertekst {
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: normal;
+	}
+
+.footertekstnederst {
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	font-weight: normal;
+	}
+
+a.footertekstnederst:link {
+	text-decoration: none;
+	color: #cccccc;
+	}
+
+.infotekst {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	font-weight: normal;
+	font-style: italic;
+	}
+
+.profilbilde {
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border: 2px solid #ffffff;
+	}
+
+.reisebrevbildevenstre {
+	padding-right: 10px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	}
+
+.reisebrevbildehøyre {
+	padding-left: 10px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	}
+
+.gallerivalgactive {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #ffb20a;
+	font-weight: bold;
+	font-style: normal;
+	}
+
+.gallerivalgpassive {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: bold;
+	font-style: normal;
+	}
+
+.gallerivalgpassive:hover {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #ffb20a;
+	font-weight: bold;
+	font-style: normal;
+	}
+
+#clear {
+	clear: both;
+	}
