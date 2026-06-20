@@ -122,9 +122,9 @@ Links on utstyr.html include product-specific subpaths (all treated as dead in a
   - sportsbua.no, helsport.no, femundfjellstue.no, alfasko.no,
     rlb.no/seng/info/2924, mx-sport.no/members/telemark/ (same reasons as above)
 
-  *utstyr.html (27 links unlinked):*
+  *utstyr.html (31 links; href="#" not removed — see regression fix below):*
   - Sponsor sidebar (6): same 6 as index.html
-  - Product links (21): quechua.com, lowealpine.com, helsport.no product pages (3×),
+  - Product links (25): quechua.com, lowealpine.com, helsport.no product pages (4×),
     norrona.com, janus.no product pages (6×), sasta.fi, sportsdeal.no (2×),
     alfasko.no product page, asnes.com/ProductDetails (2×), crispi.no,
     rottefella.no product, swix.no, komplett.no (2×), sikkerhetsbutikken.net
@@ -152,3 +152,20 @@ Links on utstyr.html include product-specific subpaths (all treated as dead in a
   unsafe. The press image (arcticfemme.jpg) remains in place at the same position; it is
   no longer clickable. This is the same treatment as the Arne S. Skeie webmaster link
   removal: keep the visible element, strip only the anchor.
+- 2026-06-20: Utstyr hover-reveal regression fix. The dead-link audit initially removed
+  `<a href>` wrappers entirely from dead product links on utstyr.html. This broke the
+  hover-triggered image reveal: the CSS rule `#utstyrbolk a.utstyr:hover span { display: block }`
+  (and `#utstyrbolk a.utstyr span { display: none }`) is keyed to the `<a class="utstyr">`
+  element being present in the DOM. With the anchor removed, the `<span><img/>` elements
+  became permanently visible instead of hover-only.
+  Fix: restored utstyr.html to its pre-audit DOM structure (full `<a class="utstyr">`
+  wrappers intact) then changed dead URLs to `href="#"` instead of removing the anchor.
+  The `<a>` element, its `class="utstyr"`, and `target="_blank"` are all preserved exactly.
+  `href="#"` with `target="_blank"` opens a new blank tab on click (mildly odd but
+  harmless — no page scroll or navigation to broken URL on the current page). 31 links
+  total: 6 dead sponsor sidebar + 25 dead product links.
+  **Future link audit rule for this site:** Any page using CSS/JS hover behavior keyed
+  to anchor presence (like `a.utstyr:hover`) must use `href="#"` for dead links rather
+  than removing the `<a>` element. Only pages where no hover behavior depends on anchor
+  presence (index.html, sponsorer.html, reisebrev.html, reiserute.html) may remove
+  anchors outright.
