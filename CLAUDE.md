@@ -161,9 +161,10 @@ Links on utstyr.html include product-specific subpaths (all treated as dead in a
   Fix: restored utstyr.html to its pre-audit DOM structure (full `<a class="utstyr">`
   wrappers intact) then changed dead URLs to `href="#"` instead of removing the anchor.
   The `<a>` element, its `class="utstyr"`, and `target="_blank"` are all preserved exactly.
-  `href="#"` with `target="_blank"` opens a new blank tab on click (mildly odd but
-  harmless — no page scroll or navigation to broken URL on the current page). 31 links
-  total: 6 dead sponsor sidebar + 25 dead product links.
+  `target="_blank"` was subsequently removed from all 31 dead links (keeping only
+  `href="#"`), so clicking a dead link now does nothing at all — no new tab, no
+  navigation, no scroll-to-top. Live links retain their original `target="_blank"`.
+  31 links total: 6 dead sponsor sidebar + 25 dead product links.
   **Future link audit rule for this site:** Any page using CSS/JS hover behavior keyed
   to anchor presence (like `a.utstyr:hover`) must use `href="#"` for dead links rather
   than removing the `<a>` element. Only pages where no hover behavior depends on anchor
