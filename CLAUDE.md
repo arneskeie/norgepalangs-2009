@@ -170,3 +170,20 @@ Links on utstyr.html include product-specific subpaths (all treated as dead in a
   than removing the `<a>` element. Only pages where no hover behavior depends on anchor
   presence (index.html, sponsorer.html, reisebrev.html, reiserute.html) may remove
   anchors outright.
+- 2026-06-23: Deindex 02-restored-static entirely. Rationale: the restored 2009 site
+  (norgepalangs-2009) should not compete with the modernized site (norgepalangs) in
+  search results — only the modernized site should appear in Google.
+  Two-layer approach (belt and suspenders for GitHub Pages, which does not support
+  custom HTTP headers):
+  1. `robots.txt` created at repo root with `User-agent: * / Disallow: /` — prevents
+     all compliant crawlers from indexing any path under this site.
+  2. `<meta name="robots" content="noindex, nofollow" />` added immediately after the
+     charset meta tag in all 16 HTML pages that have a proper `<head>` structure:
+     galleri.html, gjestebok.html, index.html, omoss.html, reisebrev.html,
+     reisebrev1.html, reisebrev2.html, reisebrev3.html, reisebrev4.html,
+     reisebrev5.html, reisebrev6.html, reiserute.html, sponsorer.html, turlogg.html,
+     utstyr.html, videogalleri.html.
+  The 6 vid*.html files (vid1–6.html) are bare YouTube `<object>` embed fragments
+  with no DOCTYPE, `<head>`, or `<body>` — they cannot receive meta tags and were
+  skipped. These files have no crawlable text content and are not meaningfully
+  indexable regardless.
